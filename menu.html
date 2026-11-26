@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Kios Hot Wok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2" href="index.html">
+                <span class="brand-logo-wrap"><img src="images/logo.jpg" alt="Logo Kios Hot Wok" class="brand-logo"></span>
+                <span>Kios Hot Wok</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="story.html">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visit.html">Visit Us</a></li>
+                    <li class="nav-item ms-lg-2"><a class="btn btn-dark btn-sm px-3" href="order.html">My Order <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="eyebrow">WHAT WE SERVE</span>
+                <h1 class="display-5 fw-bold mt-2">Our Menu</h1>
+                <p class="text-secondary mb-0">Pilihan makanan dan kelapa segar dari Kios Hot Wok.</p>
+            </div>
+        </section>
+
+        <section class="section-padding pt-4">
+            <div class="container">
+                <div class="d-flex flex-wrap gap-2 mb-5" id="menu-filters">
+                    <button class="btn btn-dark filter-button active" data-filter="all">Semua Menu</button>
+                    <button class="btn btn-outline-dark filter-button" data-filter="hot-wok">Hot Wok</button>
+                    <button class="btn btn-outline-dark filter-button" data-filter="coconut">Fresh Coconut</button>
+                </div>
+
+                <div id="hot-wok-menu" class="menu-section">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3">
+                        <div><span class="eyebrow">16.00–22.00 WITA</span><h2 class="mt-1">Hot Wok</h2></div>
+                        <p class="text-secondary mb-2">Chinese-style cooking</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-lg-4 product-item" data-category="hot-wok">
+                            <article class="product-card" data-id="nasi-goreng" data-name="Nasi Goreng" data-price="20000">
+                                <img src="images/nasi-goreng.jpg" alt="Nasi Goreng">
+                                <div class="product-info"><h3>Nasi Goreng</h3><p class="text-secondary">Nasi goreng dengan racikan kecap khas Opa.</p><div class="product-bottom"><strong>Rp20.000</strong><button type="button" class="btn btn-dark add-to-cart">Tambah</button></div></div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 product-item" data-category="hot-wok">
+                            <article class="product-card" data-id="mie-goreng" data-name="Mie Goreng" data-price="20000">
+                                <img src="images/mie-goreng.jpg" alt="Mie Goreng">
+                                <div class="product-info"><h3>Mie Goreng</h3><p class="text-secondary">Mie goreng dengan cita rasa khas.</p><div class="product-bottom"><strong>Rp20.000</strong><button type="button" class="btn btn-dark add-to-cart">Tambah</button></div></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="coconut-menu" class="menu-section mt-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3">
+                        <div><span class="eyebrow">08.00–15.00 WITA</span><h2 class="mt-1">Fresh Coconut</h2></div>
+                        <p class="text-secondary mb-2">Fresh coconut products</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-lg-4 product-item" data-category="coconut">
+                            <article class="product-card" data-id="es-kelapa" data-name="Es Kelapa Muda (Gelas Besar)" data-price="10000">
+                                <img src="images/es-kelapa.jpg" alt="Es Kelapa Muda">
+                                <div class="product-info"><h3>Es Kelapa Muda</h3><p class="text-secondary">Ukuran gelas besar dengan gula batu buatan sendiri.</p><div class="product-bottom"><strong>Rp10.000</strong><button type="button" class="btn btn-dark add-to-cart">Tambah</button></div></div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 product-item" data-category="coconut">
+                            <article class="product-card" data-id="kelapa-bulat" data-name="Kelapa Bulat" data-price="12000">
+                                <img src="images/kelapa-bulat.jpg" alt="Kelapa Bulat">
+                                <div class="product-info"><h3>Kelapa Bulat</h3><p class="text-secondary">Kelapa muda utuh.</p><div class="product-bottom"><strong>Rp12.000</strong><button type="button" class="btn btn-dark add-to-cart">Tambah</button></div></div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 product-item" data-category="coconut">
+                            <article class="product-card" data-id="kelapa-klapertart" data-name="Kelapa untuk Klapertart" data-price="12000">
+                                <img src="images/kelapa-klapertart.jpg" alt="Kelapa untuk Klapertart">
+                                <div class="product-info"><h3>Kelapa untuk Klapertart</h3><p class="text-secondary">Kelapa yang disiapkan untuk kebutuhan klapertart.</p><div class="product-bottom"><strong>Rp12.000</strong><button type="button" class="btn btn-dark add-to-cart">Tambah</button></div></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cart-message" class="cart-message" role="status" aria-live="polite"></div>
+                <div class="cart-shortcut"><span>Sudah memilih menu?</span><a href="order.html" class="btn btn-dark">Lihat Keranjang <span class="cart-count">0</span></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <h2 class="footer-title">Kios Hot Wok</h2>
+                    <p class="footer-tagline">Chinese-Style Food & Fresh Coconut</p>
+                    <p class="footer-text mb-2">Menyajikan nasi goreng dan mie goreng dengan kecap racikan sendiri, serta es kelapa muda segar dengan gula batu buatan sendiri.</p>
+                    <p class="footer-text mb-0"><strong>Pemilik:</strong> Yance Mawuntu</p>
+                </div>
+                <div class="col-6 col-md-6 col-lg-2">
+                    <h3 class="footer-heading">Menu & Halaman</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="visit.html">Visit Us</a></li>
+                        <li><a href="order.html">My Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h3 class="footer-heading">Jam & Lokasi</h3>
+                    <ul class="footer-list">
+                        <li><strong>Fresh Coconut:</strong> 08.00–15.00 WITA</li>
+                        <li><strong>Hot Wok:</strong> 16.00–22.00 WITA</li>
+                        <li><strong>Layanan:</strong> Makan di tempat & Takeaway</li>
+                        <li><strong>Alamat:</strong> Depan RS GMIM Tonsea, Jl. Prof. Arnold Mononutu No. 167, Sarongsong Satu, Airmadidi, Minahasa Utara, Sulawesi Utara 95371 (<a href="https://www.google.com/maps/search/?api=1&query=RS+GMIM+Tonsea+Airmadidi+Sulawesi+Utara" target="_blank" rel="noopener noreferrer">Google Maps</a>)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="footer-heading">Kontak</h3>
+                    <ul class="footer-list">
+                        <li><strong>Telepon:</strong> <a href="tel:+6282347439209">082347439209</a></li>
+                        <li><strong>WhatsApp:</strong> <a href="https://wa.me/6282347439209" target="_blank" rel="noopener noreferrer">Chat via WhatsApp</a></li>
+                        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/search/top?q=Yance%20Mawuntu" target="_blank" rel="noopener noreferrer">Yance Mawuntu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+                <span>© <span class="current-year"></span> Kios Hot Wok · Airmadidi, Sulawesi Utara</span>
+                <span>Chinese-Style Food & Fresh Coconut · Yance Mawuntu</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
